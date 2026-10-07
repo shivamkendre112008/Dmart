@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — DMart Latur | Everyday Shopping, Better Value (Demo)</title>
+<meta name="description" content="About the DMart Latur demo website — representing everyday shopping, groceries, household products and value at DMart, Latur, Maharashtra, India.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%23e0242b'/><text x='32' y='45' font-family='Arial' font-size='38' font-weight='bold' fill='white' text-anchor='middle'>D</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections.css">
+</head>
+
+<body data-page="about">
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+  <div class="nav__progress" id="navProgress"></div>
+  <div class="container nav__inner">
+    <a class="brand" href="index.html" aria-label="DMart Latur home">
+      <span class="brand__mark">
+        <svg viewBox="0 0 24 24"><path d="M4.4 4h1.2a1 1 0 01.97.76l.4 1.74m0 0L7.7 15a1.6 1.6 0 001.56 1.25h8.1A1.6 1.6 0 0019 15l1.7-7.5H6.97" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.2" cy="19.4" r="1.7" fill="#fff"/><circle cx="16.8" cy="19.4" r="1.7" fill="#fff"/></svg>
+      </span>
+      <span class="brand__text"><strong>DMart<i>.</i></strong><small>Latur</small></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary navigation">
+      <a class="nav__link" data-nav="home" href="index.html">Home</a>
+      <a class="nav__link" data-nav="categories" href="categories.html">Categories</a>
+      <a class="nav__link" data-nav="products" href="products.html">Products</a>
+      <a class="nav__link" data-nav="offers" href="offers.html">Offers</a>
+      <a class="nav__link" data-nav="store" href="store.html">Store</a>
+      <a class="nav__link" data-nav="about" href="about.html">About</a>
+      <a class="nav__link" data-nav="contact" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn" id="searchOpen" aria-label="Open search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" data-cart-open aria-label="Open cart">
+        <svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1.6 1.6 0 001.6 1.3h8.6a1.6 1.6 0 001.6-1.3L21 7H6"/></svg>
+        <span class="icon-btn__badge" id="cartBadge">0</span>
+      </button>
+      <a class="btn btn--primary btn--sm nav__cta" href="offers.html" data-magnetic>Today's Offers</a>
+      <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__top">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">
+        <svg viewBox="0 0 24 24"><path d="M4.4 4h1.2a1 1 0 01.97.76l.4 1.74m0 0L7.7 15a1.6 1.6 0 001.56 1.25h8.1A1.6 1.6 0 0019 15l1.7-7.5H6.97" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.2" cy="19.4" r="1.7" fill="#fff"/><circle cx="16.8" cy="19.4" r="1.7" fill="#fff"/></svg>
+      </span>
+      <span class="brand__text"><strong>DMart<i>.</i></strong><small>Latur</small></span>
+    </a>
+    <button class="icon-btn" id="menuClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-menu__links" aria-label="Mobile navigation">
+    <a data-nav="home" href="index.html">Home <span>01</span></a>
+    <a data-nav="categories" href="categories.html">Categories <span>02</span></a>
+    <a data-nav="products" href="products.html">Products <span>03</span></a>
+    <a data-nav="offers" href="offers.html">Offers <span>04</span></a>
+    <a data-nav="store" href="store.html">Store <span>05</span></a>
+    <a data-nav="about" href="about.html">About <span>06</span></a>
+    <a data-nav="contact" href="contact.html">Contact <span>07</span></a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <span class="mobile-menu__loc">
+      <svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      Latur, Maharashtra, India
+    </span>
+    <a class="btn btn--primary btn--block" href="offers.html">View Today's Offers</a>
+  </div>
+</div>
+
+<!-- ============ SEARCH OVERLAY ============ -->
+<div class="search" id="search" role="dialog" aria-modal="true" aria-label="Search products">
+  <div class="search__backdrop"></div>
+  <div class="search__panel">
+    <div class="search__row">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input class="search__input" id="searchInput" type="text" placeholder="Search products or categories…" autocomplete="off">
+      <button class="search__esc" id="searchClose">ESC</button>
+    </div>
+    <div class="search__hint">Quick search</div>
+    <div class="search__results" id="searchResults"></div>
+    <div class="search__foot">
+      <span>Try: rice · juice · baby care · stationery</span>
+      <span>Demo search — filters this website's products</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PAGE ============ -->
+<main>
+
+  <section class="page-hero">
+    <div class="page-hero__bg" style="background-image:url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="container page-hero__inner">
+      <span class="chip chip--dark" data-reveal="up">Demo store website</span>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><i>/</i><b>About</b>
+      </nav>
+      <h1 data-reveal="up" data-delay="0.06">About<br>DMart Latur</h1>
+      <p data-reveal="up" data-delay="0.14">A demo website that represents the DMart store experience in Latur — everyday shopping, groceries, household products and value.</p>
+    </div>
+  </section>
+
+  <!-- story -->
+  <section class="section">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__media" data-reveal="left">
+          <div class="about__img">
+            <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=1200&q=80" alt="Fresh vegetables arranged on a table" loading="lazy" decoding="async">
+          </div>
+          <div class="about__float">
+            <span class="about__float__ic">
+              <svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            </span>
+            <div>
+              <strong>Latur Store</strong>
+              <span>Maharashtra, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__copy">
+          <span class="eyebrow" data-reveal="up">Our story</span>
+          <h2 class="section-title" data-reveal="up" data-delay="0.08">Everyday Shopping, <em>Done Right</em></h2>
+          <p class="lead" data-reveal="up" data-delay="0.14">
+            DMart Latur is presented here as a modern retail store website — clean, fast and easy to browse.
+            It focuses on what shoppers actually look for: groceries, fresh produce, household products and honest value.
+          </p>
+          <p class="lead" data-reveal="up" data-delay="0.2">
+            Everything on this site — products, prices and offers — is demo content created for a college project
+            and portfolio use. It is not the official DMart website and does not take real orders.
+          </p>
+
+          <ul class="about__list" data-stagger>
+            <li data-reveal="right"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>One store, many needs</b> — groceries, home, clothing and more.</span></li>
+            <li data-reveal="right"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Value-focused</b> — designed around everyday household budgets.</span></li>
+            <li data-reveal="right"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span><b>Made for Latur</b> — local store information for Latur, Maharashtra.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stats" data-stagger>
+        <div class="stat" data-reveal="up">
+          <span class="stat__ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1.6 1.6 0 001.6 1.3h8.6a1.6 1.6 0 001.6-1.3L21 7H6"/></svg></span>
+          <strong>Everyday Essentials</strong>
+          <span>Groceries and home basics in one store.</span>
+        </div>
+        <div class="stat" data-reveal="up">
+          <span class="stat__ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7.4" height="7.4" rx="2"/><rect x="13.6" y="3" width="7.4" height="7.4" rx="2"/><rect x="3" y="13.6" width="7.4" height="7.4" rx="2"/><rect x="13.6" y="13.6" width="7.4" height="7.4" rx="2"/></svg></span>
+          <strong>Multiple Categories</strong>
+          <span>From fresh produce to electronics.</span>
+        </div>
+        <div class="stat" data-reveal="up">
+          <span class="stat__ic"><svg viewBox="0 0 24 24"><path d="M20.6 13.4L13.4 20.6a2 2 0 01-2.8 0l-7.2-7.2A2 2 0 013 12V5a2 2 0 012-2h7a2 2 0 011.4.6l7.2 7.2a2 2 0 010 2.6z"/><circle cx="7.6" cy="7.6" r="1.5"/></svg></span>
+          <strong>Value-Focused Shopping</strong>
+          <span>Everyday prices across the store.</span>
+        </div>
+        <div class="stat" data-reveal="up">
+          <span class="stat__ic"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <strong>Latur Store</strong>
+          <span>Latur, Maharashtra, India.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- focus areas -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__copy">
+          <span class="eyebrow" data-reveal="up">What we focus on</span>
+          <h2 class="section-title" data-reveal="up" data-delay="0.08">Three Simple <em>Promises</em></h2>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px" data-stagger>
+        <div class="info-card" data-reveal="up">
+          <span class="info-card__ic"><svg viewBox="0 0 24 24"><path d="M20.6 13.4L13.4 20.6a2 2 0 01-2.8 0l-7.2-7.2A2 2 0 013 12V5a2 2 0 012-2h7a2 2 0 011.4.6l7.2 7.2a2 2 0 010 2.6z"/><circle cx="7.6" cy="7.6" r="1.5"/></svg></span>
+          <div>
+            <h4>Value</h4>
+            <p>Products chosen for everyday usefulness, at prices that make sense for a household.</p>
+          </div>
+        </div>
+
+        <div class="info-card" data-reveal="up">
+          <span class="info-card__ic"><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg></span>
+          <div>
+            <h4>Selection</h4>
+            <p>Ten categories covering groceries, personal care, home, clothing, baby care and more.</p>
+          </div>
+        </div>
+
+        <div class="info-card" data-reveal="up">
+          <span class="info-card__ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5.6c0 4.4-2.9 7.7-7 9.4-4.1-1.7-7-5-7-9.4V6z"/><path d="M9 12.2l2.2 2.2 4-4.2"/></svg></span>
+          <div>
+            <h4>Trust</h4>
+            <p>A familiar, transparent shopping experience — clearly labelled as a demo throughout.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-strip" style="margin-top:clamp(44px,5vw,70px)" data-reveal="up">
+        <div class="cta-strip__copy">
+          <h3>Come see the store in Latur</h3>
+          <p>Location, opening hours and directions — all on the store page.</p>
+        </div>
+        <a class="btn btn--light" href="store.html" data-magnetic>
+          Store &amp; location
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark">
+            <svg viewBox="0 0 24 24"><path d="M4.4 4h1.2a1 1 0 01.97.76l.4 1.74m0 0L7.7 15a1.6 1.6 0 001.56 1.25h8.1A1.6 1.6 0 0019 15l1.7-7.5H6.97" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.2" cy="19.4" r="1.7" fill="#fff"/><circle cx="16.8" cy="19.4" r="1.7" fill="#fff"/></svg>
+          </span>
+          <span class="brand__text"><strong>DMart<i>.</i></strong><small>Latur</small></span>
+        </a>
+        <p>Everyday shopping. Better value. A demo website showing the DMart store experience for Latur, Maharashtra.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram" data-no-transition><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook" data-no-transition><svg viewBox="0 0 24 24"><path d="M14.8 8.4h2.6V5.2h-2.6c-2.3 0-4 1.8-4 4.1v1.9H8.4v3.2h2.4V21h3.3v-6.6h2.5l.5-3.2h-3V9.4c0-.6.4-1 1.2-1z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="YouTube" data-no-transition><svg viewBox="0 0 24 24"><rect x="2.5" y="5.6" width="19" height="12.8" rx="4"/><path d="M10.2 9.6l5 2.4-5 2.4z" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h5>Store</h5>
+        <ul>
+          <li class="footer__store">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span>Latur, Maharashtra, India</span>
+          </li>
+          <li><a href="store.html">Opening hours</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=DMart+Latur+Maharashtra" target="_blank" rel="noopener">Get directions</a></li>
+          <li><a href="store.html">Store information</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faq">Help</a></li>
+          <li><a href="store.html">Store Information</a></li>
+          <li><a href="about.html">Demo Notes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h5>Social</h5>
+        <ul>
+          <li><a href="#" data-no-transition>Instagram</a></li>
+          <li><a href="#" data-no-transition>Facebook</a></li>
+          <li><a href="#" data-no-transition>YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <p>© <span data-year>2026</span> DMart Latur — demo website created for educational &amp; portfolio purposes.</p>
+      <span class="footer__demo">Unofficial demo · not affiliated with DMart</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CURTAIN ============ -->
+<div class="curtain" id="curtain" aria-hidden="true">
+  <div class="curtain__panels"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="curtain__brand">
+    <div class="loader-mark">
+      <span class="loader-mark__box">
+        <svg viewBox="0 0 24 24"><path d="M4.4 4h1.2a1 1 0 01.97.76l.4 1.74m0 0L7.7 15a1.6 1.6 0 001.56 1.25h8.1A1.6 1.6 0 0019 15l1.7-7.5H6.97" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.2" cy="19.4" r="1.7" fill="#fff"/><circle cx="16.8" cy="19.4" r="1.7" fill="#fff"/></svg>
+      </span>
+      <span class="loader-mark__txt">DMart<span>.</span></span>
+    </div>
+    <div class="loader-bar"><i></i></div>
+    <div class="loader-sub">Latur · Maharashtra</div>
+  </div>
+</div>
+<noscript><style>#curtain{display:none}[data-reveal]{opacity:1;transform:none;filter:none}</style></noscript>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
